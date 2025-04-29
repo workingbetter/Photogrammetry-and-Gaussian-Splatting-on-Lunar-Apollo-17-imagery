@@ -31,29 +31,23 @@ pip install numpy opencv-python scikit-image open3d
 
 1. **Import Images**:
    - Open Metashape and create a new project.
-   - Click `Workflow > Add Photos` and select the 15 Apollo 17 images (e.g., `AS17-137-20903HR.png`, etc.).
+   - Click `Workflow > Add Photos` and select the 15 Apollo 17 images.
 
 2. **Align Photos**:
    - Click `Workflow > Align Photos`.
    - Use **High** accuracy and enable **Generic preselection**.
    - This creates a sparse point cloud and positions the cameras.
 
-3. **Build Dense Point Cloud**:
-   - Click `Workflow > Build Dense Cloud`.
+3. **Build Point Cloud**:
+   - Click `Workflow > Build Point Cloud`.
    - Set **Quality** to **Medium** and enable **Calculate point confidence**.
    - This generates a detailed 3D point cloud.
 
-4. **Build Mesh**:
-   - Click `Workflow > Build Mesh`.
-   - Use **Dense Cloud** as the source and set **Surface Type** to **Arbitrary**.
-
-5. **Build Texture**:
+4. **Build Texture**:
    - Click `Workflow > Build Texture` to add photo textures to the mesh.
 
-6. **Export Dense Point Cloud**:
+5. **Export Dense Point Cloud**:
    - Go to `File > Export > Export Points` and save as `original_dense_cloud.ply`.
-
-**Note**: If "Build Dense Cloud" is not visible under `Workflow`, check `Tools > Dense Cloud > Build Dense Cloud`.
 
 ---
 
@@ -62,9 +56,9 @@ pip install numpy opencv-python scikit-image open3d
 Since Gaussian splatting isn't directly available in Metashape, we simulate it by rendering views from the original camera positions and comparing them to the original images.
 
 1. **Render Views in Metashape**:
-   - Go to `Tools > Render Photos`.
+   - Go to `Files > export > Render Images`.
    - Select each of the 15 original camera positions and render the images.
-   - Save them as `rendered_view1.png` to `rendered_view15.png`.
+   - Save them as `image1.jpg` to `image15.jpg`.
 
 2. **Evaluate with PSNR and SSIM**:
    - Use the following Python script to compare the original and rendered images.
