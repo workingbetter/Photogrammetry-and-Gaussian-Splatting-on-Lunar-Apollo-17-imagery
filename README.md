@@ -2,10 +2,7 @@
 
 This repository contains the solution to the assignment on photogrammetry and Gaussian splatting using Apollo 17 lunar imagery. The assignment is divided into two parts:
 
-- **Part A**: Perform photogrammetry to create a 3D model and use Gaussian splatting to reconstruct and evaluate the original views.
-- **Part B**: Generate novel views using Gaussian splatting, enhance the photogrammetry model with these views, and compare the results.
-
-We use **Agisoft Metashape** for photogrammetry and **Python** (with libraries like OpenCV, scikit-image, and Open3D) for image and point cloud analysis. The Python code is designed to run in **Google Colab** for ease of use.
+I used **Agisoft Metashape** for photogrammetry and **Python** (with libraries like OpenCV, scikit-image, and Open3D) for image and point cloud analysis. The Python code is designed to run in **Google Colab** for ease of use.
 
 ---
 
