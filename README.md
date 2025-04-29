@@ -15,7 +15,7 @@ Before starting, ensure you have the following:
   - `opencv-python`
   - `scikit-image`
   - `open3d`
-- **Google Colab** for running the Python scripts (or a local Python environment).
+- **Google Colab** for running the Python scripts.
 - **Apollo 17 imagery** (15 images) from the provided [Google Drive link](https://drive.google.com/drive/folders/18t2fq0a8yKQDM4BYSeuSHrAbmJujMYLO?usp=drive_link).
 
 To install the required Python libraries, run:
