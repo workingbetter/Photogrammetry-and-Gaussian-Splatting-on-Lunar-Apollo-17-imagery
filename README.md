@@ -22,12 +22,3 @@ To install the required Python libraries, run:
 ```bash
 pip install numpy opencv-python scikit-image open3d
 ```
-
-
-
-
-1. Upload the required images and PLY files to Google Colab.
-2. Adjust the file paths in the Python scripts to match your Colab environment.
-3. Run the Python cells to compute the metrics.
-
-Alternatively, you can run the scripts locally if you have the necessary environment set up.
